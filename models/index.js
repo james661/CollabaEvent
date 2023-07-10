@@ -1,10 +1,10 @@
 const User = require("./User");
-const Event = require("./Event");
-const Attendee = require("./Attendee");
-const Budget = require("./Budget");
+const Event = require("./Events");
+const Attendee = require("./Attendees");
+const Budget = require("./Budgets");
 
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const { DataTypes } = require("sequelize");
+const sequelize = require("../config/index");
 
 // relationships between models
 User.hasMany(Event, { foreignKey: "user_id" });

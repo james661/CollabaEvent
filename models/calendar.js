@@ -22,4 +22,4 @@ const Event = sequelize.define("Event", {
   // Add more attributes as needed
 });
 
-module.exports = Event;
+module.exports = Calendar;

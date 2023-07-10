@@ -1,18 +1,13 @@
-
 const sequelize = require("sequelize");
 
 class Calendar extends Model {}
 
-Calendar.init(
-  {
-    id: {
-
-    }
-  }
-)
+Calendar.init({
+  id: {},
+});
 
 const { DataTypes } = require("sequelize");
-const sequelize = require("../connect");
+const sequelize = require("../config/index");
 
 const Event = sequelize.define("Event", {
   // Define the Event model attributes/columns

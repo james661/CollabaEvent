@@ -30,7 +30,6 @@ app.use(
 );
 
 const hbs = exphbs.create({});
-const loginRoutes = 
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
@@ -44,7 +43,6 @@ app.use(express.json());
 
 app.use(require("./controllers"));
 
-app.use(loginRoutes)
 
 sequelize
   .sync({ force: false })

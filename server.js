@@ -4,7 +4,7 @@ const express = require("express");
 const { join } = require("path");
 const session = require("express-session");
 const exphbs = require("express-handlebars");
-const routes = require("./routes/calendarRoutes");
+// const routes = require("./controllers/calendarRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3001;

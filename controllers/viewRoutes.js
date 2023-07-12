@@ -3,7 +3,7 @@ const { Attendee, Budget, Event, User } = require('../models');
 
 
 router.get('/', async (req, res) => {
-  res.render('home')
+  res.render('home');
 })
 
 router.get("/login", async (req, res) => {

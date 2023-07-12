@@ -1,8 +1,7 @@
 const router = require("express").Router();
 
-
 router.get("/calendar", (req, res) => {
-  res.render(calendar)
-})
+  res.render(calendar);
+});
 
 module.exports = router;

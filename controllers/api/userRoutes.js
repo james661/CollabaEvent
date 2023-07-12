@@ -5,6 +5,7 @@ router.post('/', async (req, res) => {
   try {
     const newUser = await User.create({
       username: req.body.username,
+      email: req.body.email,
       password: req.body.password
     })
 
@@ -16,6 +17,7 @@ router.post('/', async (req, res) => {
       res.json(newUser)
     })
   } catch (err) {
+    console.log(err)
     res.status(500).json(err)
   }
 })
@@ -24,7 +26,7 @@ router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({
       where: {
-        username: req.body.username
+        email: req.body.email
       }
     })
 
@@ -46,7 +48,9 @@ router.post('/login', async (req, res) => {
       res.json(user)
     })
   } catch (err) {
+    console.log(err);
     res.status(500).json(err)
+
   }
 })
 

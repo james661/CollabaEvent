@@ -4,6 +4,7 @@ const Attendee = require("./Attendees");
 const Budget = require("./Budgets");
 
 const { DataTypes } = require("sequelize");
+
 const sequelize = require("../config/index.js");
 
 // relationships between models

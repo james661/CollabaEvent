@@ -48,5 +48,9 @@ router.get("/signup", async (req, res) => {
   }
 });
 
+router.get("/calendar", (req, res) => {
+  res.render("calendar");
+});
+
 
 module.exports = router

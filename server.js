@@ -35,11 +35,11 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.use(express.static(join(__dirname, "public")));
-app.use("/images", express.static(join(__dirname, "/public/images")));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(routes);
+// app.use(routes);
 
 app.use(require("./controllers"));
 

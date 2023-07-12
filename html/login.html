@@ -10,28 +10,17 @@
   <title>Event Connect</title>
 </head>
 
-<!-- <body>
-  <div class="wrapper">
-    <div class="navigation">
-      <img src="../public/images/logo.png" id="logo" alt="Event Connect logo."/>
-      <div class="contact_info">
-        <a href="..." id="github">Github</a>
-        <a href="..." id="contact">Contact Us</a>
-      </div>
-    </div>
-  </div> -->
-
-  <div class="form_container">
+<body>
+<div class="row justify-space-between-md">
+  <div class="login-card">
     <img src="../public/images/logo.png" id="logo" alt="Event Connect logo." />
-    <form class="form">
-      <input placeholder="     Email" id="email">
+    <form class="form login-form">
+      <input placeholder="     Email" class="form-input" type="text" id="email-login" />
       <br></br>
-      <input placeholder="     Password" id="password">
+      <input placeholder="     Password" class="form-input" type="password" id="password-login" />
       <br></br>
       <br></br>
-      <button id="sign_in">Sign In</button>
-      <br></br>
-      <button id="sign_up">Sign Up</button>
+      <button class="btn btn-primary" type="submit" id="sign_in">Log In</button>
       <br></br>
       <br></br>
       <div>
@@ -39,6 +28,8 @@
       </div>
     </form>
   </div>
+</div>
+
 
   <!-- <script src="./project/script.js"></script> -->
 </body>

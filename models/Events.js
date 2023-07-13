@@ -1,4 +1,5 @@
 const { DataTypes } = require("sequelize");
+
 const sequelize = require("../config/index");
 
 const Event = sequelize.define(
@@ -26,9 +27,7 @@ const Event = sequelize.define(
       allowNull: false,
     },
     user_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
+      type: DataTypes.INTEGER    },
   },
   {
     sequelize,

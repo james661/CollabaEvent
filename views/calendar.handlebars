@@ -1,20 +1,10 @@
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-<script>
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth'
-    });
-    calendar.render();
-  });
-
-</script>
-<div>
+{{> cal}}
+<div id="calendar"></div>
+{{!-- <div>
   {{#each users}}
     {{#if isPostShared ../post.id}}
       <h2>{{../post.title}}</h2>
       <p>{{../post.content}}</p>
     {{/if}}
   {{/each}}
-</div>
+</div> --}}

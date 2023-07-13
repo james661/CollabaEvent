@@ -1,5 +1,12 @@
 // const router = require('express').Router()
 
+const apiRoutes = require('./api');
+const loginRoutes = require("./loginRoutes");
+const user = require("./user");
+const auth = require("./auth");
+const viewRoutes = require("./viewRoutes");
+router.use('/', viewRoutes)
+router.use('/api', apiRoutes)
 // const apiRoutes = require('./api')
 // const viewRoutes = require('./viewRoutes')
 
@@ -25,13 +32,5 @@
 //   console.log("Server is running on port 3001");
 // });
 
-
-
-const router = require("express").Router();
-const { User, Event, Attendee, Budget } = require("../models"); // Import all the models
-const apiRoutes = require("./api"); // Import the apiRoutes module
-const viewRoutes = require('./viewRoutes')
-// Mount the event route
-router.use("/api", apiRoutes);
 
 module.exports = router;

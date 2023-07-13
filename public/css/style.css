@@ -1,9 +1,14 @@
 a {
-  color: gray;
+  color: black;
 }
 
 body {
   background-color: gray;
+}
+
+#logout {
+  background-color: black;
+  color: white;
 }
 
 .login-card {

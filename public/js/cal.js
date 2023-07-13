@@ -1,15 +1,16 @@
- 
-// container.
-// const element = event.target;
+//  const event = new FullCalendar.EventApi(calendar, {
+//   title: 'My Event',
+//   start: '2023-07-12',
+//   end: '2023-07-13',
+//   backgroundColor: 'blue',
+//   borderColor: 'darkblue',
+//   textColor: 'white',
+//   extendedProps: {
+//     description: 'This is a sample event'
+//   }
+// });
 
-// element.dataset.date.textContent = 'chicken';
 
-// let date = document.querySelector('[data-date="2023-07-12"]');
+// // Add the event to the calendar
+// calendar.addEvent(event);
 
-// if (date) {
-//   element.appendChild(childElement);
-//   var childElement = 
-//   textContent = 'post';
-// }
-
-console.log(document.getAttribute("data-date"));

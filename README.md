@@ -1,6 +1,6 @@
 # Event-Connect
 
-## Desciption
+## Description
 Have you ever struggled with collaboritavely planning events? Well struggle no more! Planning events is now going to be a breeze. This application allows collaboration, empowers organizers, and creates unforgettable experiences. Organizers can create events, assign tasks, and manage budgets. Participants can RSVP, explore details, and much more.
 
 ## Installation

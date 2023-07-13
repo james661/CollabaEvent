@@ -24,8 +24,6 @@ node server.js
 To view Event-Connect, please visit our website: 
 https://event-connect661-a81d491c8153.herokuapp.com/
 
-![PlaceHolder ScreenShot](URL)
-
 ![Event-Con](https://github.com/james661/Event-Connect/assets/131474339/0b9ffd31-ae99-436d-b709-07d32b2ef894)
 
 Some tips for using our application include signing up in the login screen. With this, make sure to enter in a case-sensitive password and email which will be saved for later usage. Upon logging in, you will be taken to the calendar, where a view page will display all your events you have listed (daily/weekly/monthly). If there are no events, feel free to enter in and list some personal events you might need assistance with planning! Once events have been added, don't forget to share with friends to keep each other on the same schedule :)  

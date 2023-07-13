@@ -14,5 +14,5 @@ const sequelize = process.env.JAWSDB_URL
   }
 )
 
-sequelize.logging = console.log;
+// sequelize.logging = console.log;
 module.exports = sequelize;

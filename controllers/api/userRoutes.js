@@ -1,4 +1,4 @@
-const router = require('express').Router()
+const router = require('express').Router();
 const { User } = require('../../models')
 
 router.post('/', async (req, res) => {
@@ -64,4 +64,24 @@ router.post('/logout', (req, res) => {
   }
 })
 
-module.exports = router
+router.post("/users", async (req, res) => {
+  try {
+
+    const { username, email, password } = req.body;
+
+    // Creates a new user record in the database
+    const newUser = await User.create({
+      username,
+      email,
+      password,
+    });
+
+    res.status(201).json(newUser);
+  } catch (error) {
+    // Error handling
+    console.error("Error creating user:", error);
+    res.status(500).json({ error: "Error creating user" });
+  }
+});
+
+module.exports = router;
